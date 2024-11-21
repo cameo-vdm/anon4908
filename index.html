@@ -24,7 +24,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>MotionPrompt:  On-the-Fly Prompt Optimization for Coherent Video Generation</title>
+  <title>Optical-Flow Guided Prompt Optimization for Coherent Video Generation</title>
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
 
@@ -297,7 +297,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p style="font-size:18px;">
-            While text-to-video (T2V) diffusion models have made significant progress, they still struggle to generate videos with temporal consistency and smooth motion. In diffusion frameworks, guidance techniques have proven effective in overcoming limitations and improving output quality during inference; however, applying these methods to video diffusion models introduces the added challenge of handling computations across entire sequences. To address this issue, we propose a novel on-the-fly prompt optimization approach that guides the video generation process using optical flow. Specifically, we first train a discriminator to distinguish between optical flow from random subset of frames from real videos and those from generated videos. Building on the intuition that prompt can control an entire video, we then optimize the learnable token embeddings with gradients from a flow-based discriminator between random subset of frames in an on-the-fly manner. This allows our method to produce visually coherent video sequences that closely align with natural motion dynamics, without sacrificing the fidelity of the generated content. We demonstrate the effectiveness of our approach across various T2V models.
+            While text-to-video diffusion models have made significant strides, many still face challenges in generating videos with temporal consistency. Within diffusion frameworks, guidance techniques have proven effective in enhancing output quality during inference; however, applying these methods to video diffusion models introduces additional complexity of handling computations across entire sequences. To address this, we propose a novel framework called \textbf{MotionPrompt} that guides the video generation process via optical flow. Specifically, we train a discriminator to distinguish optical flow between random pairs of frames from real videos and generated ones. Given that prompts can influence the entire video, we optimize learnable token embeddings during reverse sampling steps by using gradients from a trained discriminator applied to random frame pairs. This approach allows our method to generate visually coherent video sequences that closely reflect natural motion dynamics, without compromising the fidelity of the generated content. We demonstrate the effectiveness of our approach across various models. 
         </div>
       </div>
     </div>
@@ -315,9 +315,9 @@
       <div class="column is-four-sixths">
         <h2 class="title is-3">Method</h2>
         <div class="content has-text-justified">
-          <img src="static/images/fig_pipeline.jpg" alt="fig_pipeline"/>
+          <img src="static/images/pipeline_v4.png" alt="fig_pipeline"/>
           <p style=" font-size:18px; margin-top:30px;">
-            MotionPrompt Method
+             MotionPrompt enhances temporal consistency in text-to-video diffusion models by combining prompt optimization with an optical flow-based discriminator. Leveraging gradients from a subset of frames and aligning optical flow with real-world motion patterns, MotionPrompt efficiently generates videos with smooth, realistic motion and strong contextual coherence.
           </p>
       
         </div>
