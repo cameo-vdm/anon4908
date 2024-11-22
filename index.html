@@ -90,6 +90,20 @@
         height: auto;
     }
 
+    .custom-gif-container-4vid {    /* GIF container for 4 videos (comparison part) */
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Vertically centers the video within the container */
+        align-items: center;     /* Horizontally centers the video within the container */
+        width: 30%;              /* Keeps the same width as before for each video container */
+        height: 100%;            /* Ensures the height of the container is used */
+    }
+
+    .custom-gif-container-4vid img {
+        width: 100%;
+        height: auto;
+    }
+    
     .custom-caption {
         text-align: center;
         margin-top: 5px;
@@ -679,6 +693,113 @@
     </div>
   </section>
 
+
+  
+<!-- Comparison -->
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <!-- <div class="container"> -->
+    <div class="container is-max-desktop"  style="margin-top:30px;">
+      <div class="section-title has-text-centered">
+        <h2 class="title is-3"> Qualitative Comparison of Reward Models </h2>
+      </div>
+
+      <div class="spacer"></div>
+
+      <div class="custom-slider-container">
+        <div class="custom-slider" id="custom-slider">
+            <!-- 첫 번째 세트 -->
+            <div class="custom-slide">
+                <div class="custom-top-caption">"Otter on branch while eating."</div> <!-- Top caption added -->
+                <div class="custom-gif-wrapper">
+                    <div class="custom-gif-container-4vid">
+                        <img src="./static/image/freeinit/1_1.gif" alt="GIF 1">
+                        <div class="custom-caption">Ours + Freeinit 1 iteration</div>
+                    </div>
+                    <div class="custom-gif-container-4vid">
+                        <img src="./static/image/freeinit/1_2.gif" alt="GIF 2">
+                        <div class="custom-caption">Freeinit 3 iteration</div>
+                    </div>
+                    <div class="custom-gif-container-4vid">
+                        <img src="./static/image/freeinit/1_3.gif" alt="GIF 3">
+                        <div class="custom-caption">Freeinit 5 iteration</div>
+                    </div>
+                </div>
+            </div>
+            <!-- 두 번째 세트 -->
+            <div class="custom-slide">
+                <div class="custom-top-caption">"City view reflected on a glass building."</div> <!-- Top caption added -->
+                <div class="custom-gif-wrapper">
+                    <div class="custom-gif-container-4vid">
+                        <img src="./static/image/freeinit/2_1.gif" alt="GIF 4">
+                        <div class="custom-caption">Ours + Freeinit 1 iteration</div>
+                    </div>
+                    <div class="custom-gif-container-4vid">
+                        <img src="./static/image/freeinit/2_2.gif" alt="GIF 5">
+                        <div class="custom-caption"> Freeinit 3 iteration</div>
+                    </div>
+                    <div class="custom-gif-container-4vid">
+                        <img src="./static/image/freeinit/2_3.gif" alt="GIF 6">
+                        <div class="custom-caption">Freeinit 5 iteration</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="custom-slide">
+              <div class="custom-top-caption">"A tree house in the woods."</div> <!-- Top caption added -->
+              <div class="custom-gif-wrapper">
+                  <div class="custom-gif-container-4vid">
+                      <img src="./static/image/freeinit/3_1.gif" alt="GIF 4">
+                      <div class="custom-caption">Ours + Freeinit 1 iteration</div>
+                  </div>
+                  <div class="custom-gif-container-4vid">
+                      <img src="./static/image/freeinit/3_2.gif" alt="GIF 5">
+                      <div class="custom-caption">Freeinit 3 iteration</div>
+                  </div>
+                  <div class="custom-gif-container-4vid">
+                      <img src="./static/image/freeinit/3_3.gif" alt="GIF 6">
+                      <div class="custom-caption">Freeinit 5 iteration</div>
+                  </div>
+              </div>
+            </div>
+
+            <div class="custom-slide">
+              <div class="custom-top-caption">"Close up view of green leafy vegetable."</div> <!-- Top caption added -->
+              <div class="custom-gif-wrapper">
+                  <div class="custom-gif-container-4vid">
+                      <img src="./static/image/freeinit/4_1.gif" alt="GIF 4">
+                      <div class="custom-caption">Ours + Freeinit 1 iteration</div>
+                  </div>
+                  <div class="custom-gif-container-4vid">
+                      <img src="./static/image/freeinit/4_2.gif" alt="GIF 5">
+                      <div class="custom-caption">Freeinit 3 iteration</div>
+                  </div>
+                  <div class="custom-gif-container-4vid">
+                      <img src="./static/image/freeinit/4_3.gif" alt="GIF 6">
+                      <div class="custom-caption">Freeinit 5 iteration</div>
+                  </div>
+              </div>
+            </div>
+
+        </div>
+    
+        <!-- 좌우 화살표 -->
+        <button class="custom-arrow custom-prev" onclick="moveCustomSlide(-1)">&#10094;</button>
+        <button class="custom-arrow custom-next" onclick="moveCustomSlide(1)">&#10095;</button>
+
+        <div class="dots-container">
+          <span class="dot" onclick="setCurrentSlide(0)"></span>
+          <span class="dot" onclick="setCurrentSlide(1)"></span>
+          <span class="dot" onclick="setCurrentSlide(2)"></span>
+          <span class="dot" onclick="setCurrentSlide(3)"></span>
+          <!-- <span class="dot" onclick="setCurrentSlide(4)"></span> -->
+          <!-- <span class="dot" onclick="setCurrentSlide(5)"></span> -->
+        </div>
+      </div>
+      <div class="spacer"></div>
+    </div>
+  </div>
+</section>
 
 
   <footer class="footer">
