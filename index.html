@@ -308,7 +308,7 @@
 
 
 <!-- Youtube video -->
-<section class="hero is-small is-light">
+<section class="hero is-small">
   
   <div class="hero-body">
     <!-- <div class="container"> -->
@@ -323,7 +323,7 @@
         <h2 class="title is-4">1. Comparison with Previous work</h2>
       </div>
 
-      <p style="font-size:18px; margin-top:30px; margin-bottom:10px">As demonstrated in the samples above, our VideoGuide is the only method to reliably improve temporal quality of inadequate samples without any unwanted trade-offs. This allows for newfound synergistic effects among models: functions such as personalization can be freely utilized while borrowing the temporal consistency of external models.</p>
+      <p style="font-size:18px; margin-top:30px; margin-bottom:10px"> We provide visual comparisons of our method against three baselines: LaVie, VideoCrafter2 and AndimateDiff. The baselines struggle with maintaining temporal consistency, often failing to preserve the appearance or quantity of objects, and sometimes resulting in objects that suddenly appear or disappear. In contrast, the proposed framework effectively suppresses appearance changes and sudden shifts in video generation. Additionally, our method maintains a consistent color tone across all frames and accurately captures the scene attributes and details intended by the original prompts.</p>
    
       
       <div class="spacer"></div>
@@ -333,10 +333,7 @@
       </div>
 
       
-      <!-- div id="results-carousel" class="carousel results-carousel" -->
-      <div id="results-small" class="carousel results-small">
-
-  
+      <div id="results-carousel" class="carousel results-carousel">
         <div class="item">
           <div class="twentytwenty-container" data-orientation="horizontal" ratio="1">
             <div class="desc">Man playing a video game</div>
