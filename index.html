@@ -336,9 +336,6 @@
       <div class="section-title has-text-centered">
         <h2 class="title is-4">1. Comparison with Previous work</h2>
       </div>
-
-      <p style="font-size:18px; margin-top:30px; margin-bottom:10px"> We provide visual comparisons of our method against three baselines: LaVie, VideoCrafter2 and AndimateDiff. The baselines struggle with maintaining temporal consistency, often failing to preserve the appearance or quantity of objects, and sometimes resulting in objects that suddenly appear or disappear. In contrast, the proposed framework effectively suppresses appearance changes and sudden shifts in video generation. Additionally, our method maintains a consistent color tone across all frames and accurately captures the scene attributes and details intended by the original prompts.</p>
-   
       
       <div class="spacer"></div>
 
@@ -617,6 +614,9 @@
       </div>
 
       <div class="spacer"></div>
+
+      <p style="font-size:18px; margin-top:30px; margin-bottom:10px"> We provide visual comparisons of our method against three baselines: LaVie, VideoCrafter2 and AnimateDiff. The baselines struggle with maintaining temporal consistency, often failing to preserve the appearance or quantity of objects, and sometimes resulting in objects that suddenly appear or disappear. In contrast, the proposed framework effectively suppresses appearance changes and sudden shifts in video generation. Additionally, our method maintains a consistent color tone across all frames and accurately captures the scene attributes and details intended by the original prompts.</p>
+   
       
    </div>
   </section>
@@ -703,10 +703,6 @@
       <div class="section-title has-text-centered">
         <h2 class="title is-4"> 3. Synergies with the Existing Method </h2>
       </div>
-
-      <p style=" font-size:18px; margin-top:30px;">
-             We demonstrate how our approach can be combined with orthogonal methods, FreeInit, to achieve enhanced performance. The videos generated with FreeInit often lose high-frequency details and exhibit noticeable saturation. However, by applying our method after a single noise initialization step, we observed an improvement in temporal quality while relatively minimizing the compromise in video quality, compared to the FreeInit approach where noise initialization is applied multiple times.
-      </p>
 
       <div class="spacer"></div>
 
@@ -801,6 +797,11 @@
         </div>
       </div>
       <div class="spacer"></div>
+
+      <p style=" font-size:18px; margin-top:30px;">
+             We demonstrate how our approach can be combined with orthogonal methods, FreeInit, to achieve enhanced performance. The videos generated with FreeInit often lose high-frequency details and exhibit noticeable saturation. However, by applying our method after a single noise initialization step, we observed an improvement in temporal quality while relatively minimizing the compromise in video quality, compared to the FreeInit approach where noise initialization is applied multiple times.
+      </p>
+      
     </div>
   </div>
 </section>
